@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_screen"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ie.app.aed_app_manager.Screens.AddScreen">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/aedID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="25dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Please enter AED ID..."
+            android:textColorHint="#a9a9a9"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/aedLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/aedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/aedCondition"
+            android:textColorHint="#a9a9a9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="71dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Please enter AED location..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/aedCondition"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/aedService"
+            android:textColorHint="#a9a9a9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="33dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Please enter an AED condition..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/aedService"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/saveButton"
+            android:textColorHint="#a9a9a9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="40dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Please enter a service date..."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="57dp"
+            android:onClick="saveButtonPressed"
+            android:text="Save" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

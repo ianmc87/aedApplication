@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:background="#FF6060"
+    android:elevation="4dp"
+    android:id="@+id/toolbar">
+
+    <ImageButton
+        android:id="@+id/homeIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FF6060"
+        app:srcCompat="@drawable/home_icon"
+        android:layout_gravity="left" />
+
+    <ImageButton
+        android:id="@+id/logoutIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FF6060"
+        app:srcCompat="@drawable/logout_icon"
+        android:layout_gravity="right"
+        android:paddingRight="10dp"/>
+
+</android.support.v7.widget.Toolbar>

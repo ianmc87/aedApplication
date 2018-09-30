@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AED_App_Manager</string>
+    <string name="defaultId">N/A</string>
+    <string name="defaultLocation">N/A</string>
+    <string name="defaultCondition">N/A</string>
+    <string name="defaultDate">N/A</string>
+</resources>

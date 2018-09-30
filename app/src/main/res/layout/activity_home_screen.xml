@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_screen"
+    android:background="@drawable/gradient"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="ie.app.aed_app_manager.Screens.HomeScreen">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout">
+
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_icon"
+        android:id="@+id/addIcon"
+        android:onClick="addButtonPressed"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_above="@+id/editIcon"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:layout_toEndOf="@+id/gridLayout"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:id="@+id/listIcon"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listButtonPressed"
+        android:src="@drawable/list_icon"
+        android:layout_alignTop="@+id/addIcon"
+        android:layout_toRightOf="@+id/addIcon"
+        android:layout_toEndOf="@+id/addIcon" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_icon"
+        android:id="@+id/searchIcon"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_below="@+id/addIcon"
+        android:layout_toRightOf="@+id/editIcon"
+        android:layout_toEndOf="@+id/editIcon" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_icon"
+        android:id="@+id/editIcon"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/addIcon"
+        android:layout_alignStart="@+id/addIcon" />
+
+    <ImageButton
+        android:id="@+id/deleteIcon"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bin_icon"
+        android:layout_alignTop="@+id/cameraIcon"
+        android:layout_toRightOf="@+id/editIcon"
+        android:layout_toEndOf="@+id/editIcon" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_icon"
+        android:id="@+id/cameraIcon"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_below="@+id/searchIcon"
+        android:layout_toLeftOf="@+id/deleteIcon"
+        android:layout_toStartOf="@+id/deleteIcon"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
